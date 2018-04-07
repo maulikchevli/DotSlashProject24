@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         healthView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent healthIntent = new Intent(MainActivity.this,HealthActivity.class);
+                Intent healthIntent = new Intent(MainActivity.this,IntermediateHealthActivity.class);
                 startActivity(healthIntent);
                 /*Cursor cursor = mydb.getalldata();
                 while(cursor.moveToNext()){
