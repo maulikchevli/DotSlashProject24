@@ -48,10 +48,9 @@ public class databasehelper extends SQLiteOpenHelper {
     }
 
     public Cursor getalldata(String dis) {
-        SQLiteDatabase sb = this.getReadableDatabase();
-        /*String q = "SELECT * FROM healthdata WHERE disease = " + dis ;*/
-//        String str = "select * from " + table_name + " where " + "disease = " + dis + ";";
-//        Cursor cursor = sb.rawQuery(str, null);
+        SQLiteDatabase sb = this.getWritableDatabase();
+
+        //Cursor cursor = sb.rawQuery("delete from "+table_name, null);
         Cursor cursor = sb.query(table_name,new String[]{col_1,col_2},"Disease like ?",new String[]{dis},null,null,null);
         return cursor;
     }
