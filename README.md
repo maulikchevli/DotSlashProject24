@@ -1,18 +1,18 @@
 # OneClick
 
-#### Team Name
+### Team Name
 CodingCult
 
-#### Theme
+### Theme
 Healthcare
 
-#### Description
+### Description
 Essential Services at a single tap for Senior Citizens and and people in need
 
-##### Platform
+#### Platform
 Android
 
-##### Members
+#### Members
 <a href='https://github.com/suprit98'>Suprit</a> <br>
 <a href='https://github.com/maulikchevli'>Maulik</a> <br>
 <a href='https://github.com/harshsurti4199'>Suprit</a> <br>
