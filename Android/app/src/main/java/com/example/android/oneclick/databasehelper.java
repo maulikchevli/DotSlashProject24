@@ -91,12 +91,12 @@ public class databasehelper extends SQLiteOpenHelper {
         return cursor;
     }
 
-    public Cursor delalldata() {
+   /* public Cursor delalldata() {
         SQLiteDatabase sb = this.getWritableDatabase();
         Cursor cursor = sb.rawQuery("delete from "+table_name, null);
         //Cursor cursor = sb.query(table_name,new String[]{col_1,col_2},"Disease like ?",new String[]{dis},null,null,null);
         return cursor;
-    }
+    }*/
     public Cursor delalldata1() {
         SQLiteDatabase sb = this.getWritableDatabase();
         Cursor cursor = sb.rawQuery("delete from "+table_name1, null);
