@@ -1,9 +1,16 @@
 package com.example.android.oneclick;
+
+import android.support.v7.app.AppCompatActivity;
+
+import android.Manifest;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -24,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         mydb= new databasehelper(this);
         mydb.insertdata("ashthama","wheezing");
         TextView healthView = (TextView) findViewById(R.id.health);
+        TextView emergencyView = (TextView) findViewById(R.id.emergency);
         healthView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -34,6 +42,21 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),cursor.getString(0)+" "+ cursor.getString(1),Toast.LENGTH_LONG).show();
                 }*/
 
+            }
+        });
+        emergencyView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent emergencyIntent = new Intent(MainActivity.this,EmergencyServicesActivity.class);
+                startActivity(emergencyIntent);
+                /*Intent callIntent = new Intent(Intent.ACTION_CALL);
+                callIntent.setData(Uri.parse("tel:9033164940"));
+                if (ActivityCompat.checkSelfPermission(MainActivity.this,
+                        Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                    return;
+                }
+                startActivity(callIntent);*/
             }
         });
     }
