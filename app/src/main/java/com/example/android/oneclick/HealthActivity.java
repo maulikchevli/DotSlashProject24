@@ -23,15 +23,16 @@ public class HealthActivity extends AppCompatActivity {
         fetchDataButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String symptoms="";
+                String symptoms=null;
                 Cursor cursor = mydb.getalldata(etext.getText().toString());
                 while (cursor.moveToNext()) {
                     //Toast.makeText(getApplicationContext(), cursor.getString(0) + " " + cursor.getString(1), Toast.LENGTH_LONG).show();
-                    symptoms = symptoms + cursor.getString(1) + " ";
+                    symptoms = symptoms + cursor.getString(1) + "";
 
                 }
                 TextView symptomsTextView = (TextView) findViewById(R.id.symptoms);
                 symptomsTextView.setText(symptoms);
+                symptoms="";
             }
         });
 
