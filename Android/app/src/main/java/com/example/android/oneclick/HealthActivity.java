@@ -32,7 +32,7 @@ public class HealthActivity extends AppCompatActivity {
                 }
                 TextView symptomsTextView = (TextView) findViewById(R.id.symptoms);
                 symptomsTextView.setText(symptoms);
-                symptoms="";
+
             }
         });
 
