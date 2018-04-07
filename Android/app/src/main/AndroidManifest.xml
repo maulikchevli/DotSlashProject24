@@ -19,7 +19,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".HealthActivity" />
-        <activity android:name=".EmergencyServicesActivity"></activity>
+        <activity android:name=".EmergencyServicesActivity" />
+        <activity android:name=".IntermediateHealthActivity" />
+        <activity android:name=".StoreSymptomsActivity"></activity>
     </application>
 
 </manifest>
