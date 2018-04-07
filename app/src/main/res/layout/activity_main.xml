@@ -45,6 +45,5 @@
         android:layout_gravity="center"
         android:text="Entertainment" />
 
-    
 
 </LinearLayout>
