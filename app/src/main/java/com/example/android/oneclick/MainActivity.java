@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mydb= new databasehelper(this);
+        Cursor cursor=mydb.delalldata();
         mydb.insertdata("Hypothyroidism","Facial expressions become dull");
         mydb.insertdata("Hypothyroidism","Eyelids droop");
         mydb.insertdata("Hypothyroidism","The eyes and face become puffy");
