@@ -20,10 +20,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        SQLiteDatabase mydatabase = openOrCreateDatabase("healthdata",MODE_PRIVATE,null);
-        openDatabase("healthdata",OPEN_READWRITE);
-        mydatabase.execSQL("CREATE TABLE IF NOT EXISTS healthdata(disease VARCHAR,symptoms VARCHAR);");
-        mydatabase.execSQL("INSERT INTO healthdata VALUES('asthama','wheezing');");
 
         TextView healthView = (TextView) findViewById(R.id.health);
         healthView.setOnClickListener(new View.OnClickListener() {
