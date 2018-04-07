@@ -13,18 +13,19 @@ def health():
     if request.method == 'GET':
         return render_template('health.html')
     else:
-        data = request.form['getData']
-        print(data) #dgb
+        disease = request.form['getDisease']
+
         con = sql.connect('dis.db')
         con.row_factory = sql.Row
 
         cur = con.cursor()
-        cur.execute('SELECT name,symptom from Diseases WHERE name LIKE ?',("%"+data+"%",))
+        cur.execute('SELECT name,symptom from Diseases WHERE name LIKE ?',("%"+disease+"%",))
 
-        ret = cur.fetchall()
+        dis = cur.fetchall()
+
         con.close()
-        print(ret) #dgb
-        return render_template('healthInfo.html',infos = ret)
+
+        return render_template('healthInfo.html',infos = dis)
 
 if __name__ == "__main__":
     app.run(debug=True)
