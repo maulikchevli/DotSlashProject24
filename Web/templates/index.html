@@ -12,7 +12,11 @@
 <body>
 
 <div class="container-fluid center">
-  <h1>OneClick</h1>
+    <div class="row">
+      <img src="{{url_for('static',filename = 'images/app_icon.png')}}" alt="OneClick" style="display:inline-block;width:100px;">
+      <h1 style="display:inline-block">OneClick</h1>
+   </div>
+
   <div class="row">
     <div class="container">
       <a href="{{url_for('health')}}" class="btn btn-default btn-block" role="button">Health</a>
