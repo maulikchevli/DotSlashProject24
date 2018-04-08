@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:src="@drawable/background_image" />
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
+    android:layout_gravity="center_vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.android.oneclick.EmergencyServicesActivity">
@@ -19,6 +30,7 @@
         android:layout_gravity="center"
         android:text="Ambulance" />
 
+
     <TextView
         android:id="@+id/police"
         android:layout_width="wrap_content"
@@ -31,6 +43,7 @@
         android:layout_margin="16dp"
         android:layout_gravity="center"
         android:text="Police" />
+
 
     <TextView
         android:id="@+id/fire_brigade"
@@ -46,3 +59,4 @@
         android:text="Fire Brigade" />
 
 </LinearLayout>
+</FrameLayout>

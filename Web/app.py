@@ -7,6 +7,10 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+@app.route('/entertainment')
+def entertainment():
+    return render_template('entertainment.html')
+
 @app.route('/health',methods = ['GET','POST'])
 def health():
     if request.method == 'GET':

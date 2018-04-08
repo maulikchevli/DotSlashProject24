@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:src="@drawable/background_image" />
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,8 +20,8 @@
 
     <TextView
         android:id="@+id/emergency"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
         android:gravity="center"
         android:padding="32dp"
         android:textColor="#fff"
@@ -19,23 +31,22 @@
         android:layout_gravity="center"
         android:text="Emergency" />
 
-    <TextView
+
+    <ImageView
         android:id="@+id/health"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textColor="#fff"
-        android:textStyle="bold"
+        android:src="@drawable/health_image"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="0dp"
         android:layout_margin="16dp"
-        android:padding="32dp"
-        android:background="#AB47BC"
-        android:layout_gravity="center"
-        android:text="Health" />
+        android:gravity="center"
+        android:layout_gravity="center" />
+
 
     <TextView
         android:id="@+id/entertainment"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
         android:layout_margin="16dp"
         android:padding="32dp"
         android:textColor="#fff"
@@ -47,3 +58,4 @@
 
 
 </LinearLayout>
+</FrameLayout>

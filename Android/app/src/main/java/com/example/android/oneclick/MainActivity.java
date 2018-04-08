@@ -14,6 +14,7 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -56,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         //Cursor cursor = mydb.getalldata();
-        TextView healthView = (TextView) findViewById(R.id.health);
+        ImageView healthView = (ImageView) findViewById(R.id.health);
         TextView emergencyView = (TextView) findViewById(R.id.emergency);
         healthView.setOnClickListener(new View.OnClickListener() {
             @Override

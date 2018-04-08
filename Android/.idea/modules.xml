@@ -3,6 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Android.iml" filepath="$PROJECT_DIR$/Android.iml" />
+<<<<<<< HEAD
+=======
+      <module fileurl="file://C:\Users\Deep Mistry\Desktop\dotslash\DotSlashProject24\Android\Android.iml" filepath="C:\Users\Deep Mistry\Desktop\dotslash\DotSlashProject24\Android\Android.iml" />
+      <module fileurl="file://C:\Users\Admin1\Desktop\DotSlashProject24\Android\app\Android-app.iml" filepath="C:\Users\Admin1\Desktop\DotSlashProject24\Android\app\Android-app.iml" />
+      <module fileurl="file://C:\Users\Admin1\Desktop\DotSlashProject24\Android\DotSlashProject24-Android.iml" filepath="C:\Users\Admin1\Desktop\DotSlashProject24\Android\DotSlashProject24-Android.iml" />
+>>>>>>> c1adfa77544258ed22c21dda8bec7362af06a825
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
