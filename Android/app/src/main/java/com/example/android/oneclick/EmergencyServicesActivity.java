@@ -1,6 +1,7 @@
 package com.example.android.oneclick;
 
 import android.Manifest;
+import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
