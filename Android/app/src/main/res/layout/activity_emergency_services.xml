@@ -19,7 +19,7 @@
 
     <TextView
         android:id="@+id/ambulance"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="32dp"
@@ -33,7 +33,7 @@
 
     <TextView
         android:id="@+id/police"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="32dp"
@@ -47,7 +47,7 @@
 
     <TextView
         android:id="@+id/fire_brigade"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="32dp"

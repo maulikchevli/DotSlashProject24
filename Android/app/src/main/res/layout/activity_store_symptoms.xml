@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context="com.example.android.oneclick.StoreSymptomsActivity">
 
-    <LinearLayout
+    <LinegarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -28,7 +28,7 @@
 
 
 
-    </LinearLayout>
+    </LinegarLayout>
 
     <Button
         android:id="@+id/store_data"
