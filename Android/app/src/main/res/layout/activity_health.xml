@@ -7,19 +7,51 @@
     android:layout_height="match_parent"
     tools:context="com.example.android.oneclick.HealthActivity">
 
-    <EditText
-        android:id="@+id/edit_text"
-        android:text="Enter disease"
-        android:layout_margin="16dp"
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="44dp" />
+        android:layout_height="wrap_content">
 
-    <EditText
-        android:id="@+id/edit_text2"
-        android:text="Enter symptoms"
-        android:layout_margin="16dp"
+        <TextView
+            android:text="Enter disease"
+            android:textSize="20dp"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="44dp" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="44dp" />
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Enter symptoms"
+            android:textSize="20dp"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edit_text2"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="44dp" />
+
+
+
+    </LinearLayout>
+
+
 
 
     <Button

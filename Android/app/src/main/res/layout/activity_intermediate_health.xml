@@ -30,6 +30,7 @@
         android:layout_gravity="center"
         android:text="Store symptoms" />
 
+
     <TextView
         android:id="@+id/get_info"
         android:layout_width="wrap_content"
