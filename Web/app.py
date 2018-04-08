@@ -13,12 +13,20 @@ def health():
         return render_template('health.html')
     else:
         disease = request.form['getDisease']
-
+        symptoms=request.form['getSymptom']
         con = sql.connect('dis.db')
         con.row_factory = sql.Row
 
         cur = con.cursor()
-        cur.execute('SELECT name,symptom from Diseases WHERE name LIKE ?',("%"+disease+"%",))
+        if symptoms=='' and disease!='':            
+            cur.execute('SELECT name,symptom from Diseases WHERE name LIKE ?',("%"+disease+"%",))
+        elif symptoms!='' and disease=='':
+            cur.execute('SELECT name,symptom from Diseases WHERE symptoms LIKE ?',("%"+symptoms+"%",))
+        elif symptoms!='' and disease!='':
+            cur.execute('SELECT name,symptom from Diseases WHERE name LIKE ?',("%"+disease+"%",))
+        else:
+            cur.execute('SELECT name,symptom from Diseases')
+        
 
         dis = cur.fetchall()
 
