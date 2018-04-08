@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Android.iml" filepath="$PROJECT_DIR$/Android.iml" />
       <module fileurl="file://C:\Users\Deep Mistry\Desktop\dotslash\DotSlashProject24\Android\Android.iml" filepath="C:\Users\Deep Mistry\Desktop\dotslash\DotSlashProject24\Android\Android.iml" />
+      <module fileurl="file://C:\Users\Admin1\Desktop\DotSlashProject24\Android\app\Android-app.iml" filepath="C:\Users\Admin1\Desktop\DotSlashProject24\Android\app\Android-app.iml" />
+      <module fileurl="file://C:\Users\Admin1\Desktop\DotSlashProject24\Android\DotSlashProject24-Android.iml" filepath="C:\Users\Admin1\Desktop\DotSlashProject24\Android\DotSlashProject24-Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://C:\Users\Deep Mistry\Desktop\dotslash\DotSlashProject24\Android\app\app.iml" filepath="C:\Users\Deep Mistry\Desktop\dotslash\DotSlashProject24\Android\app\app.iml" />
     </modules>
