@@ -29,6 +29,9 @@ public class EmergencyServicesActivity extends AppCompatActivity {
                 callIntent.setData(Uri.parse("tel:9033164940"));
                 if (ActivityCompat.checkSelfPermission(EmergencyServicesActivity.this,
                         Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                    //return;
+                    ActivityCompat.requestPermissions(EmergencyServicesActivity.this, new String[]{Manifest.permission.CALL_PHONE},1);
+                    //startActivity(callIntent);
                     return;
                 }
                 startActivity(callIntent);
@@ -42,9 +45,13 @@ public class EmergencyServicesActivity extends AppCompatActivity {
                 callIntent.setData(Uri.parse("tel:8866900226"));
                 if (ActivityCompat.checkSelfPermission(EmergencyServicesActivity.this,
                         Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                    //return;
+                    ActivityCompat.requestPermissions(EmergencyServicesActivity.this, new String[]{Manifest.permission.CALL_PHONE},1);
+                    //startActivity(callIntent);
                     return;
                 }
                 startActivity(callIntent);
+
             }
         });
 
@@ -55,9 +62,12 @@ public class EmergencyServicesActivity extends AppCompatActivity {
                 callIntent.setData(Uri.parse("tel:9033164940"));
                 if (ActivityCompat.checkSelfPermission(EmergencyServicesActivity.this,
                         Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                    ActivityCompat.requestPermissions(EmergencyServicesActivity.this, new String[]{Manifest.permission.CALL_PHONE},1);
+                    //startActivity(callIntent);
                     return;
                 }
                 startActivity(callIntent);
+
             }
         });
     }
