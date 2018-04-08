@@ -10,8 +10,8 @@ Healthcare
 Essential Services at a single tap for Senior Citizens and and people in need on any Platform (Desktop/Mobile)
 
 #### Platform
-Android
-Web
+- Android <br>
+- Web
 
 #### Members
 <a href='https://github.com/suprit98'>Suprit</a> <br>
