@@ -26,7 +26,7 @@ def health():
         if symptoms=='' and disease!='':            
             cur.execute('SELECT name,symptom from Diseases WHERE name LIKE ?',("%"+disease+"%",))
         elif symptoms!='' and disease=='':
-            cur.execute('SELECT name,symptom from Diseases WHERE symptoms LIKE ?',("%"+symptoms+"%",))
+            cur.execute('SELECT name,symptom from Diseases WHERE symptom LIKE ?',("%"+symptoms+"%",))
         elif symptoms!='' and disease!='':
             cur.execute('SELECT name,symptom from Diseases WHERE name LIKE ?',("%"+disease+"%",))
         else:
